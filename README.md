@@ -6,7 +6,9 @@ I have contributed to over two million visits!
 
 Majoring in Software Engineering
 
-Managaged The Undead Coming: Armageddon
+Games:
+https://www.roblox.com/games/17631208817/Undertale-RNG-Fixed
+https://www.roblox.com/games/12197268861/The-Undead-Coming-Armageddon-ALPHA
 
 Taught by a professional in the industry with over 10+ years of experience
 
