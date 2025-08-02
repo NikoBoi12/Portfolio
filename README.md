@@ -2,7 +2,7 @@
 
 I'm a Software Engineer, Game Developer, and Full stack developer with some VFX knowledge
 
-I have contributed to over Nine million visits!
+I have contributed to over eleven million visits!
 
 Majoring in Software Engineering
 
