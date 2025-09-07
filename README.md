@@ -10,8 +10,8 @@ Currently, I am **majoring in Software Engineering** and learning from industry 
 
 ## 🎮 Featured Games
 
-- [Undertale RNG](https://www.roblox.com/games/17631208817/Undertale-RNG-Fixed) – A Roblox game showcasing gameplay mechanics and player progression.  
-- [The Undead Coming: Armageddon ALPHA](https://www.roblox.com/games/12197268861/The-Undead-Coming-Armageddon-ALPHA) – A Roblox game focused on immersive combat and exploration.
+- [Undertale RNG](https://www.roblox.com/games/17631208817/Undertale-RNG-Fixed) – My own personal project
+- [The Undead Coming: Armageddon ALPHA](https://www.roblox.com/games/12197268861/The-Undead-Coming-Armageddon-ALPHA) – A zombie roblox combat game
 
 ---
 
