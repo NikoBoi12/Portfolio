@@ -1,27 +1,35 @@
-# Hi There! Welcome to my portfolio
+# 👋 Hi There! Welcome to My Portfolio
 
-I'm a Software Engineer, Game Developer, and Full stack developer with some VFX knowledge
+I'm a **Software Engineer**, **Game Developer**, and **Full Stack Developer** with some **VFX knowledge**.  
+I have contributed to projects with **over 11 million visits**!  
+I have nearly 4+ years of experience!
 
-I have contributed to over eleven million visits!
+Currently, I am **majoring in Software Engineering** and learning from industry professionals with **10+ years of experience**.
 
-Majoring in Software Engineering
+---
 
-Games:
+## 🎮 Featured Games
 
-https://www.roblox.com/games/17631208817/Undertale-RNG-Fixed
+- [Undertale RNG](https://www.roblox.com/games/17631208817/Undertale-RNG-Fixed) – A Roblox game showcasing gameplay mechanics and player progression.  
+- [The Undead Coming: Armageddon ALPHA](https://www.roblox.com/games/12197268861/The-Undead-Coming-Armageddon-ALPHA) – A Roblox game focused on immersive combat and exploration.
 
-https://www.roblox.com/games/12197268861/The-Undead-Coming-Armageddon-ALPHA
+---
 
-Taught by a professional in the industry with over 10+ years of experience
+## 🛠️ Main Portfolio Pieces
 
-Main Portfolio pieces:
-https://github.com/NikoBoi12/RobloxGame
+- [**Roblox Data Management Discord Bot**](https://github.com/NikoBoi12/RobloxBot) – A Discord bot handling Roblox datastores, leaderboards, and in-game data management.  
+- [**Roblox Game Project**](https://github.com/NikoBoi12/RobloxGame) – An immersive Roblox game demonstrating gameplay mechanics, progression, and player interaction.
 
-## Languages
-Lua, LuaU, C#, Kivy, GDScript, SQL, Java, Python, CSS, HTML, and JavaScript (Examples avaliable upon request I just haven't added the examples just yet)
+---
 
-## 🤳 Connect with me:
+## 💻 Languages & Technologies
 
-Email: niko.projectsouls@gmail.com
+Lua, LuaU, C#, Kivy, GDScript, SQL, Java, Python, CSS, HTML, JavaScript, and C!
+*(Examples available upon request — will be added soon!)*
 
-Discord: nikoboi
+---
+
+## 🤳 Connect with Me
+
+- **Email:** [niko.projectsouls@gmail.com](mailto:niko.projectsouls@gmail.com)  
+- **Discord:** `nikoboi`
