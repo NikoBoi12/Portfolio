@@ -14,6 +14,9 @@ https://www.roblox.com/games/12197268861/The-Undead-Coming-Armageddon-ALPHA
 
 Taught by a professional in the industry with over 10+ years of experience
 
+Main Portfolio pieces:
+https://github.com/NikoBoi12/RobloxGame
+
 ## Languages
 Lua, LuaU, C#, Kivy, GDScript, SQL, Java, Python, CSS, HTML, and JavaScript (Examples avaliable upon request I just haven't added the examples just yet)
 
