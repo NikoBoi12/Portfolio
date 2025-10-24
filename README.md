@@ -2,7 +2,7 @@
 
 I'm a **Software Engineer**, **Game Developer**, and **Full Stack Developer** with some **VFX knowledge**.  
 I have contributed to projects with **over 11 million visits**!  
-I have nearly 4+ years of experience!
+I have nearly 5+ years of experience!
 
 Currently, I am **majoring in Software Engineering** and learning from industry professionals with **10+ years of experience**.
 
@@ -19,13 +19,14 @@ Currently, I am **majoring in Software Engineering** and learning from industry 
 
 - [**Roblox Data Management Discord Bot**](https://github.com/NikoBoi12/RobloxBot) – A Discord bot handling Roblox datastores, leaderboards, and in-game data management.  
 - [**Roblox Game Project**](https://github.com/NikoBoi12/RobloxGame) – An immersive Roblox game demonstrating gameplay mechanics, progression, and player interaction.
+- [**Roblox Wensite Project**](https://github.com/NikoBoi12/roblox-website) – A website I am working on developing to display real time stats from my game!
 - Within this repository theres plenty of random scripts I've worked on!
 
 ---
 
 ## 💻 Languages & Technologies
 
-Lua, LuaU, C#, Kivy, GDScript, SQL, Java, Python, CSS, HTML, JavaScript, and C!
+Lua, LuaU, C#, Kivy, GDScript, SQL, Java, Python, CSS, HTML, JavaScript, C, Node.js, Javascript, React, and more!
 *(Examples available upon request — will be added soon!)*
 
 ---
