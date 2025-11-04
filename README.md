@@ -19,7 +19,7 @@ Currently, I am **majoring in Software Engineering** and learning from industry 
 
 - [**Roblox Data Management Discord Bot**](https://github.com/NikoBoi12/RobloxBot) – A Discord bot handling Roblox datastores, leaderboards, and in-game data management.  
 - [**Roblox Game Project**](https://github.com/NikoBoi12/RobloxGame) – An immersive Roblox game demonstrating gameplay mechanics, progression, and player interaction.
-- [**Roblox Wensite Project**](https://github.com/NikoBoi12/roblox-website) – A website I am working on developing to display real time stats from my game!
+- [**Roblox Website Project**](https://github.com/NikoBoi12/roblox-website) – A website I am working on developing to display real time stats from my game!
 - Within this repository theres plenty of random scripts I've worked on!
 
 ---
