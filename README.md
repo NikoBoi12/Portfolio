@@ -1,7 +1,7 @@
 # 👋 Hi There! Welcome to My Portfolio
 
 I'm a **Software Engineer**, **Game Developer**, and **Full Stack Developer** with some **VFX knowledge**.  
-I have contributed to projects with **over 11 million visits**!  
+I have contributed to projects with **over 11 million visits** and generated over **15,000 dollars** in revenue!  
 I have nearly 5+ years of experience!
 
 Currently, I am **majoring in Software Engineering** and learning from industry professionals with **10+ years of experience**.
