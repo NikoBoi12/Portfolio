@@ -29,6 +29,14 @@ Currently, I am **majoring in Software Engineering** and learning from industry 
 Lua, LuaU, C#, Kivy, GDScript, SQL, Java, Python, CSS, HTML, JavaScript, C, Node.js, Javascript, React, and more!
 *(Examples available upon request — will be added soon!)*
 
+
+## 💻 Languages & Technologies
+### Course Work:
+https://github.com/NikoBoi12/Portfolio/tree/main/ProjectSouls/WebTests
+https://github.com/NikoBoi12/Portfolio/tree/main/ProjectSouls/OtherProjects
+https://github.com/NikoBoi12/Portfolio/tree/main/ProjectSouls/TestingAndVerification
+https://github.com/NikoBoi12/Portfolio/tree/main/ProjectSouls/DATA%20MODELING%20SYST%20DEV%20CSCE411%20SEC%20001%20Fall%202025
+
 ---
 
 ## 🤳 Connect with Me
