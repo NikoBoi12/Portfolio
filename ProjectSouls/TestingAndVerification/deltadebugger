@@ -1,0 +1,161 @@
+import sys
+import subprocess
+import json
+import tempfile
+import os
+import copy
+
+ORACLE_PATH = ""
+LOGGING_ENABLED = False
+
+
+# Disclaimer due to me not being 100% confident in the python style guide I used gemini to reformat some naming schemes and make things more descriptive
+
+
+def run_oracle(content_to_test):
+    with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.tmp', encoding='utf-8') as temp_f:
+        temp_f.write(content_to_test)
+        temp_file_path = temp_f.name
+
+    try:
+        result = subprocess.run([ORACLE_PATH, temp_file_path],
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE)
+        return result.returncode == 0
+    finally:
+        os.remove(temp_file_path)
+
+
+def dd_minimize(chunks, test_function):
+    num_tests = 0
+    n = 2
+
+    while len(chunks) >= 2:
+
+        subsets = []
+        start = 0
+        for i in range(n):
+            end = start + (len(chunks) - start) // (n - i)
+            subsets.append(chunks[start:end])
+            start = end
+
+        some_complement_is_interesting = False
+        for i in range(n):
+            complement = [chunk for j, subset in enumerate(subsets) for chunk in subset if i != j]
+            
+            if not complement:
+                continue
+
+            num_tests += 1
+            if test_function(complement):
+                chunks = complement
+                n = max(2, n - 1)
+                some_complement_is_interesting = True
+                break
+        
+        if some_complement_is_interesting:
+            continue
+        
+        some_subset_is_interesting = False
+        if n < len(chunks):
+            for i in range(n):
+                subset = subsets[i]
+                num_tests += 1
+                if test_function(subset):
+                    chunks = subset
+                    n = 2
+                    some_subset_is_interesting = True
+                    break
+
+            if some_subset_is_interesting:
+                continue
+
+        if n < len(chunks):
+            n = min(len(chunks), n * 2)
+        else:
+            break
+
+    return chunks, num_tests
+
+
+def main():
+    if not (3 <= len(sys.argv) <= 4):
+        sys.exit(1)
+
+    input_file_path = sys.argv[1]
+    
+    global ORACLE_PATH, LOGGING_ENABLED
+    ORACLE_PATH = sys.argv[2]
+    LOGGING_ENABLED = (len(sys.argv) == 4 and sys.argv[3] == '-log')
+
+    if not os.path.exists(input_file_path):
+        sys.exit(1)
+    if not os.path.exists(ORACLE_PATH):
+        sys.exit(1)
+
+    with open(input_file_path, 'r', encoding='utf-8') as f:
+        initial_content = f.read()
+
+    initial_lines = initial_content.splitlines(keepends=True)
+
+    def line_test_function(lines_to_test):
+        return run_oracle("".join(lines_to_test))
+
+    if not line_test_function(initial_lines):
+        sys.exit(1)
+
+    reduced_lines, line_variants = dd_minimize(initial_lines, line_test_function)
+    line_reduced_content = "".join(reduced_lines)
+
+    final_lines = copy.deepcopy(reduced_lines)
+    total_char_variants = 0
+    initial_char_count = len(line_reduced_content)
+
+    for i in range(len(final_lines)):
+        line_to_reduce = final_lines[i]
+
+        content = line_to_reduce.rstrip('\r\n')
+        newline_char = line_to_reduce[len(content):]
+
+        if not content:
+            continue
+
+        def char_test_function_factory(line_index, full_context):
+            def char_test(chars_to_test):
+                test_line = "".join(chars_to_test) + newline_char
+                context_copy = list(full_context)
+                context_copy[line_index] = test_line
+                full_content_str = "".join(context_copy)
+                return run_oracle(full_content_str)
+            return char_test
+
+        char_test_func = char_test_function_factory(i, final_lines)
+
+        minimized_content_chars, char_variants = dd_minimize(list(content), char_test_func)
+        
+        final_lines[i] = "".join(minimized_content_chars) + newline_char
+        total_char_variants += char_variants
+
+    char_reduced_content = "".join(final_lines)
+    final_char_count = len(char_reduced_content)
+
+    output = {
+        'lines': {
+            'remain': len(reduced_lines),
+            'removed': len(initial_lines) - len(reduced_lines),
+            'variants': line_variants,
+            'reduced': line_reduced_content
+        },
+        'characters': {
+            'remain': final_char_count,
+            'removed': initial_char_count - final_char_count,
+            'variants': total_char_variants,
+            'reduced': char_reduced_content
+        }
+    }
+
+    print(json.dumps(output, indent=4))
+
+
+if __name__ == "__main__":
+    main()
